@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1> Hello World!!</h1>
+
+    <p1>this is a cool site</p1>
+    <h2>My fav pizzas are:</h2>
+    <p2>{% for pizza in favourite_pizzas %}
+    {{pizza}} <br>
+    {% endfor %}</p2>
+
+    <h3>{{ favourite_pizzas.1 }}</h3>
+{% endblock content %}
